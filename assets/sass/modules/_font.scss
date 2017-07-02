@@ -1,0 +1,36 @@
+$font-size: 15;
+
+@mixin text($font-size, $line-height : 10, $font-family:$font-Roboto, $color:$gris-tittle, $bold:normal){
+    font-size: $font-size;
+    font-style: $bold;
+    line-height: $line-height;
+    font-family: $font-family;
+    color: $color;
+}
+
+/*
+html {
+    font-size: $base__font-size * 1px;
+}
+
+body {
+    @include text($base__font-size, $base__line, $color: $gris-tittle);
+}
+
+h1 {
+    @include text($text__size--alpha, $text__line--alpha, 15, $color: $text__colour--alpha, $bold: bold);
+}
+
+h2 {
+    @include text($text__size--beta, $text__line--beta, 15, $color: $text__colour--beta);
+}
+
+h3 {
+    @include text($text__size--gamma, $text__line--gamma, 15, $color: $text__colour--gamma);
+    text-transform: uppercase;
+}
+
+p {
+    @include text($text__size--delta, $text__line--delta, 10, $color: $text__colour--delta);
+}
+*/

@@ -1,0 +1,25 @@
+$base__font-size: 15;
+$base__line: 20;
+
+$font-Roboto:'Roboto', sans-serif;
+
+$gris-tittle: #424242;  
+$gris-fecha: #5f6368;
+$gris-texto: #414549;
+$line-azul: #4285f4;
+
+@function calc-em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
+
+
+.container{
+    transition: box-shadow .15s cubic-bezier(.4,0,.2,1);
+    &__shadows:hover{
+        box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+    }
+}
+
+img{
+    width: 100%!important;
+}
